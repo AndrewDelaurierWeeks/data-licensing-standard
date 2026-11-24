@@ -1,6 +1,6 @@
 {
-  "schema_version": "0.2.0",
-  "declaration_id": "EXAMPLE-2026-11-05-001 (illustrative; every hash in this example is a placeholder, not a real artifact)",
+  "schema_version": "0.3.0",
+  "declaration_id": "EXAMPLE-2026-11-24-001 (illustrative; every hash in this example is a placeholder)",
   "delivery": {
     "manifest_hash": "9f86d081884c7d659a2feaa0c55ad015a3bf4f1b2b0b822cd15d6c15b0f00a08",
     "hash_algorithm": "sha-256",
@@ -10,19 +10,19 @@
   "accountable_person": {
     "name": "Example Person",
     "role": "Head of Data Licensing",
-    "organization": "Example Supplier Ltd"
+    "organization": "Example Vendor Ltd"
   },
-  "declared_at": "2026-11-05T12:00:00Z",
+  "declared_at": "2026-11-24T12:00:00Z",
   "components": [
     {
       "component_id": "work-orders-2019-2025",
       "description": "Completed work orders with linked invoices, 12,400 records",
-      "source": "Example Supplier Ltd field-service system",
+      "source": "Example Vendor Ltd field-service system",
       "collection_method": "Export from the production database, filtered to closed jobs",
       "custodians": [
-        "Example Supplier Ltd"
+        "Example Vendor Ltd"
       ],
-      "collection_authority": "Supplier's own business records; customer terms of service section 9 (data use)",
+      "collection_authority": "Vendor's own business records; customer terms of service section 9 (data use)",
       "rights_basis": {
         "basis": "ownership",
         "terms_traveling": "Training and evaluation use only; no resale; 24-month term",
@@ -49,7 +49,7 @@
       "measured_by": {
         "name": "Example Reviewer",
         "role": "Data Protection Lead",
-        "organization": "Example Supplier Ltd"
+        "organization": "Example Vendor Ltd"
       }
     },
     "residual": "3 of 500 sampled records re-identified by name and address lookup; free-text notes field was not checked beyond the model's output",
@@ -84,7 +84,8 @@
     "procedure": "Exclusion requests received after delivery are forwarded to the buyer's named contact by email within 10 business days, with the component id and record ids",
     "propagation_time_days": 14,
     "intake_mechanism_exists": true,
-    "requests_propagated_last_12_months": 0
+    "requests_propagated_last_12_months": 0,
+    "log_bound_to_manifest": false
   },
   "relationship_disclosure": {
     "complete": true,
@@ -92,12 +93,24 @@
     "signed_by": {
       "name": "Example Person",
       "role": "Head of Data Licensing",
-      "organization": "Example Supplier Ltd"
+      "organization": "Example Vendor Ltd"
     }
+  },
+  "synthetic_data": {
+    "present": false
+  },
+  "human_data": {
+    "made_to_order": false
+  },
+  "sensor_records": {
+    "present": false
+  },
+  "rl_environment": {
+    "present": false
   },
   "signature": {
     "kind": "signed-pdf",
     "artifact_hash": "a665a45920422f9d417e4867efdc4fb8a04a1f3fff1fa07e998e86f7f7a27ae3",
-    "signed_at": "2026-11-05T12:05:00Z"
+    "signed_at": "2026-11-24T12:05:00Z"
   }
 }
